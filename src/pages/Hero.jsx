@@ -1,6 +1,7 @@
 import React from "react";
 
 import { MdOutlineArrowOutward } from "react-icons/md";
+import { HiOutlineFolderOpen } from "react-icons/hi2";
 
 const imageUrl = "./public/t2c/Background.jpg";
 const startBig = "./public/t2c/Start-Big.png";
@@ -19,6 +20,18 @@ const Closed1 = "./public/t2c/Closed1.png";
 const Closed2 = "./public/t2c/Background.png";
 const Closed3 = "./public/t2c/Closed2.png";
 const Closed4 = "./public/t2c/Closed.png";
+
+const About_TSquaredC = "./public/About_TSquaredC-pic.png";
+
+const wc1 = "./public/t2c/why choose/wc1.png";
+const wc2 = "./public/t2c/why choose/wc2.png";
+const wc3 = "./public/t2c/why choose/wc3.png";
+const wc4 = "./public/t2c/why choose/wc4.png";
+
+const Frame_1 = "./public/t2c/Frame 1686551003.png";
+const Frame_2 = "./public/t2c/Frame_2.png";
+
+const Figure = "./public/t2c/Figure.png";
 
 const Hero = () => {
   return (
@@ -207,18 +220,14 @@ const Hero = () => {
             </div>
           </div>
 
-
-
-
-
           <div className="bg-[#171717] w-44 rounded-xl ">
             <img src={Closed2} alt="" />
 
             <div className="flex flex-col px-3">
-              <span className="text-gray-300 ">TurboSend</span>
+              <span className="text-gray-300 ">TurboAuth</span>
               <span className="text-blue-100 text-[7px] font-thin">
-                Instantly deploy powerful chat functionalities built for
-                scalability and real-time performance. No delays, just results.
+                From Google to OAuth, we integrate every major SSO option,
+                ensuring secure, seamless access for all users.
               </span>
             </div>
 
@@ -229,18 +238,15 @@ const Hero = () => {
               <MdOutlineArrowOutward size={9} className="text-blue-100" />
             </div>
           </div>
-
-
-
 
           <div className="bg-[#171717] w-44 rounded-xl ">
             <img src={Closed3} alt="" />
 
             <div className="flex flex-col px-3">
-              <span className="text-gray-300 ">TurboSend</span>
+              <span className="text-gray-300 ">TurboStream</span>
               <span className="text-blue-100 text-[7px] font-thin">
-                Instantly deploy powerful chat functionalities built for
-                scalability and real-time performance. No delays, just results.
+                Deliver video content without lag or interruptions. TurboStream
+                powers your platform with flawless video performance.
               </span>
             </div>
 
@@ -251,19 +257,16 @@ const Hero = () => {
               <MdOutlineArrowOutward size={9} className="text-blue-100" />
             </div>
           </div>
-
-
-
-
 
           <div className="bg-[#171717] w-44 rounded-xl ">
             <img src={Closed4} alt="" />
 
             <div className="flex flex-col px-3">
-              <span className="text-gray-300 ">TurboSend</span>
+              <span className="text-gray-300 ">TurboCloud</span>
               <span className="text-blue-100 text-[7px] font-thin">
-                Instantly deploy powerful chat functionalities built for
-                scalability and real-time performance. No delays, just results.
+                Monitor, optimize, and scale your cloud infrastructure
+                effortlessly—TurboCloud ensures your system runs at peak
+                efficiency
               </span>
             </div>
 
@@ -274,6 +277,320 @@ const Hero = () => {
               <MdOutlineArrowOutward size={9} className="text-blue-100" />
             </div>
           </div>
+        </div>
+
+        <div className="outline-4 flex px-8 py-12">
+          <div className="outline-4 w-1/2">
+            <span
+              className="text-2xl font-bold"
+              style={{
+                background: "linear-gradient(to right, #909DC1, #3663DE)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+            >
+              About TSquaredC
+            </span>
+            <div className="flex flex-col gap-4 text-xs font-thin text-blue-200">
+              <span>
+                At T2C, we push the boundaries of technology for businesses
+                worldwide by creating solutions that are both innovative and
+                robust. Our focus is on seamless integration and strategic
+                innovation, ensuring efficient operations and scalable growth.
+              </span>
+              <span>
+                We are committed to empowering businesses in a digital-first
+                world, simplifying complex systems to address challenges and
+                unlock opportunities. Our scalable solutions are designed for
+                high performance, prioritizing customer success and sustainable
+                growth.
+              </span>
+            </div>
+          </div>
+          <div>
+            <img src={About_TSquaredC} alt="About_TSquaredC" />
+          </div>
+        </div>
+
+        <div className="py-10 px-10 outline-orange-400 outline-4">
+          <div>
+            <span
+              className="text-2xl font-bold"
+              style={{
+                background: "linear-gradient(to right, #909DC1, #3663DE)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+            >
+              Why Choose TSquaredC{" "}
+            </span>
+            <span className="flex flex-col gap-4 text-xs font-thin text-blue-200">
+              “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus nulla velit, maximus sit amet suscipit in, fermentum id
+              est. Suspendisse consequat ornare elit.”
+            </span>
+          </div>
+          <div className="flex flex-row">
+            <div className="bg-blue-600 flex flex-col  p-5   w-1/5 rounded-xl">
+              <div className="flex flex-col gap-3 pb-3">
+                <div className="flex  items-center gap-2">
+                  <HiOutlineFolderOpen className="text-gray-100 " size={18} />
+                  <span className="text-gray-100">Tech & Talent Unified</span>
+                </div>
+                <span className="text-gray-300 font-thin text-xs">
+                  Access every technology, every skill set, and every tool -
+                  fully integrated and ready to execute.
+                </span>
+              </div>
+              <div>
+                <img src={wc1} alt="" />
+              </div>
+            </div>
+
+            <div className="bg-blue-600 flex flex-col  p-5   w-1/5 rounded-xl">
+              <div className="flex flex-col gap-3 pb-3">
+                <div className="flex  items-center gap-2">
+                  <HiOutlineFolderOpen className="text-gray-100 " size={18} />
+                  <span className="text-gray-100">Scale Right, Scale Fast</span>
+                </div>
+                <span className="text-gray-300 font-thin text-xs">
+                  Access every technology, every skill set, and every tool -
+                  fully integrated and ready to execute.
+                </span>
+              </div>
+              <div>
+                <img src={wc2} alt="" />
+              </div>
+            </div>
+
+            <div className="bg-blue-600 flex flex-col  p-5   w-1/5 rounded-xl">
+              <div className="flex flex-col gap-3 pb-3">
+                <div className="flex  items-center gap-2">
+                  <HiOutlineFolderOpen className="text-gray-100 " size={18} />
+                  <span className="text-gray-100">AI-Powered Innovation</span>
+                </div>
+                <span className="text-gray-300 font-thin text-xs">
+                  Access every technology, every skill set, and every tool -
+                  fully integrated and ready to execute.
+                </span>
+              </div>
+              <div>
+                <img src={wc3} alt="" />
+              </div>
+            </div>
+
+            <div className="bg-blue-600 flex flex-col  p-5   w-1/5 rounded-xl">
+              <div className="flex flex-col gap-3 pb-3">
+                <div className="flex  items-center gap-2">
+                  <HiOutlineFolderOpen className="text-gray-100 " size={18} />
+                  <span className="text-gray-100">
+                    Supercharge Your Product
+                  </span>
+                </div>
+                <span className="text-gray-300 font-thin text-xs">
+                  Access every technology, every skill set, and every tool -
+                  fully integrated and ready to execute.
+                </span>
+              </div>
+              <div>
+                <img src={wc4} alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-green-300  py-10">
+          <div className="flex flex-col">
+            <span
+              className="text-2xl font-bold"
+              style={{
+                background: "linear-gradient(to right, #909DC1, #3663DE)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+            >
+              Choose Your SolutionFor Emerging Businesses
+            </span>
+            <span className="flex flex-col text-blue-100 text-sm font-thin">
+              Propel your new age business forward with our Solutions:
+            </span>
+          </div>
+
+          <div className="flex flex-row gap-3">
+            <div className="w-1/3 bg-red-200 rounded-2xl">
+              <img src={Frame_1} alt="" />
+
+              <div className="flex flex-col h-44">
+                <div>
+                  <span
+                    className="text-2xl font-bold px-5"
+                    style={{
+                      background: "linear-gradient(to right, #909DC1, #3663DE)",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                    }}
+                  >
+                    Plug and Play solutions
+                  </span>
+                </div>
+
+                <div className="flex flex-row  px-5 ">
+                  <span className="pr-10  flex flex-col gap-4 text-xs font-thin text-blue-200">
+                    Instant Integration, Immediate Impact: Dive into the market
+                    without delay, utilizing our fully integrated tech stack
+                    that meshes seamlessly with your operations.
+                  </span>
+
+                  <div className="  border-gray-600 border-l-2 pl-10 "></div>
+
+                  <div className=" flex items-center  text-xs text-nowrap bg-[#2029C8] rounded-3xl py-1 px-5 text-gray-200 font-thin w-fit h-10">
+                    <button>Customize Your Path</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="w-3/5 bg-red-200 rounded-2xl">
+              <img src={Frame_2} alt="" />
+
+              <div className="flex flex-row px-5 ">
+                <div>
+                  <div>
+                    <span
+                      className="text-2xl font-bold "
+                      style={{
+                        background:
+                          "linear-gradient(to right, #909DC1, #3663DE)",
+                        WebkitBackgroundClip: "text",
+                        WebkitTextFillColor: "transparent",
+                      }}
+                    >
+                      Customizable Solutions
+                    </span>
+
+                    <span className="pr-10  flex flex-col gap-4 text-xs font-thin text-blue-200">
+                      Customizable Solutions designed for your business's unique
+                      demands & growth trajectory.
+                    </span>
+                  </div>
+
+                  <div>
+                    <span className="pr-10  flex flex-col gap-4 text-sm  text-gray-400">
+                      Build, Expand:
+                    </span>
+                    <span>
+                      <span className="pr-10  flex flex-col gap-4 text-xs font-thin text-blue-200">
+                        Engineered for long-term evolution, these solutions
+                        ensure your technology infrastructure grows as
+                        dynamically as your business.
+                      </span>
+                    </span>
+                  </div>
+                </div>
+
+                <div className="flex flex-row  px-5 ">
+                  <div className="  border-gray-600 border-l-2 pl-10 "></div>
+
+                  <div className=" flex items-center  text-xs text-nowrap bg-[#2029C8] rounded-3xl py-1 px-5 text-gray-200 font-thin w-fit h-10">
+                    <button>Customize Your Path</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <span
+            className="text-2xl font-bold "
+            style={{
+              background: "linear-gradient(to right, #909DC1, #3663DE)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}
+          >
+            Testimonials
+          </span>
+
+          <div  className="flex flex-row gap-3">
+
+          <div>
+            <div className="relative w-60  ">
+              <img className="object-cover " src={Figure} alt="" />
+
+              <div className="py-6 absolute top-0 left-0 px-4 flex flex-col">
+                <span className="text-[8px] text-gray-300  font-thin ">
+                  “T²C turned our ambitious idea into a market-ready product in
+                  record time. Their end-to-end expertise and accelerators like
+                  TurboCloud streamlined our development process, saving us
+                  months of work. From ideation to execution, they were the
+                  perfect tech partner.”
+                </span>
+
+                <div className="flex flex-row items-center gap-2 pt-4">
+                  <div className="bg-black h-10 w-10 rounded-full"></div>
+
+                  <div className=" flex flex-col">
+                    <span className="text-gray-300 text-sm">Ganesh Iyer</span>
+                    <span className="text-gray-500 text-xs">Eyemyeye</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div className="relative w-60  ">
+              <img className="object-cover " src={Figure} alt="" />
+
+              <div className="py-6 absolute top-0 left-0 px-4 flex flex-col">
+                <span className="text-[8px] text-gray-300  font-thin ">
+                  “We were struggling with onboarding inefficiencies until T²C
+                  stepped in. Their AI-driven solutions and seamless integration
+                  of TurboAuth transformed our workflows, cutting onboarding
+                  time by 50%. It’s like having a powerhouse tech team on
+                  demand.”
+                </span>
+
+                <div className="flex flex-row items-center gap-2 pt-4">
+                  <div className="bg-black h-10 w-10 rounded-full"></div>
+
+                  <div className=" flex flex-col">
+                    <span className="text-gray-300 text-sm">Raktim Bharatee</span>
+                    <span className="text-gray-500 text-xs">Pichain</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div className="relative w-60  ">
+              <img className="object-cover " src={Figure} alt="" />
+
+              <div className="py-6 absolute top-0 left-0 px-4 flex flex-col">
+                <span className="text-[8px] text-gray-300  font-thin ">
+                  “Partnering with T²C was a game-changer. Their accelerators,
+                  like TurboStream, optimized our video streaming capabilities,
+                  helping us deliver a flawless user experience. They didn’t
+                  just meet our expectations - they redefined what’s possible in
+                  tech collaboration”
+                </span>
+
+                <div className="flex flex-row items-center gap-2 pt-4">
+                  <div className="bg-black h-10 w-10 rounded-full"></div>
+
+                  <div className=" flex flex-col">
+                    <span className="text-gray-300 text-sm">JayKanth Raj</span>
+                    <span className="text-gray-500 text-xs">Stealth Mode Startup</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+
         </div>
       </div>
     </>
