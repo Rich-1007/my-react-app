@@ -3,8 +3,11 @@ import React from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { HiOutlineFolderOpen } from "react-icons/hi2";
 
-const imageUrTesting = "/src/assets/Background.jpg";
+import { IoLocationOutline } from "react-icons/io5";
+import { RiHeadphoneLine } from "react-icons/ri";
+import { LuMail } from "react-icons/lu";
 
+const imageUrTesting = "/src/assets/Background.jpg";
 
 const imageUrl = "./public/t2c/Background.jpg";
 const startBig = "./public/t2c/Start-Big.png";
@@ -515,85 +518,177 @@ const Hero = () => {
             Testimonials
           </span>
 
-          <div  className="flex flex-row gap-3">
+          <div className="flex flex-row gap-3">
+            <div>
+              <div className="relative w-60  ">
+                <img className="object-cover " src={Figure} alt="" />
 
-          <div>
-            <div className="relative w-60  ">
-              <img className="object-cover " src={Figure} alt="" />
+                <div className="py-6 absolute top-0 left-0 px-4 flex flex-col">
+                  <span className="text-[8px] text-gray-300  font-thin ">
+                    “T²C turned our ambitious idea into a market-ready product
+                    in record time. Their end-to-end expertise and accelerators
+                    like TurboCloud streamlined our development process, saving
+                    us months of work. From ideation to execution, they were the
+                    perfect tech partner.”
+                  </span>
 
-              <div className="py-6 absolute top-0 left-0 px-4 flex flex-col">
-                <span className="text-[8px] text-gray-300  font-thin ">
-                  “T²C turned our ambitious idea into a market-ready product in
-                  record time. Their end-to-end expertise and accelerators like
-                  TurboCloud streamlined our development process, saving us
-                  months of work. From ideation to execution, they were the
-                  perfect tech partner.”
-                </span>
+                  <div className="flex flex-row items-center gap-2 pt-4">
+                    <div className="bg-black h-10 w-10 rounded-full"></div>
 
-                <div className="flex flex-row items-center gap-2 pt-4">
-                  <div className="bg-black h-10 w-10 rounded-full"></div>
+                    <div className=" flex flex-col">
+                      <span className="text-gray-300 text-sm">Ganesh Iyer</span>
+                      <span className="text-gray-500 text-xs">Eyemyeye</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                  <div className=" flex flex-col">
-                    <span className="text-gray-300 text-sm">Ganesh Iyer</span>
-                    <span className="text-gray-500 text-xs">Eyemyeye</span>
+            <div>
+              <div className="relative w-60  ">
+                <img className="object-cover " src={Figure} alt="" />
+
+                <div className="py-6 absolute top-0 left-0 px-4 flex flex-col">
+                  <span className="text-[8px] text-gray-300  font-thin ">
+                    “We were struggling with onboarding inefficiencies until T²C
+                    stepped in. Their AI-driven solutions and seamless
+                    integration of TurboAuth transformed our workflows, cutting
+                    onboarding time by 50%. It’s like having a powerhouse tech
+                    team on demand.”
+                  </span>
+
+                  <div className="flex flex-row items-center gap-2 pt-4">
+                    <div className="bg-black h-10 w-10 rounded-full"></div>
+
+                    <div className=" flex flex-col">
+                      <span className="text-gray-300 text-sm">
+                        Raktim Bharatee
+                      </span>
+                      <span className="text-gray-500 text-xs">Pichain</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div className="relative w-60  ">
+                <img className="object-cover " src={Figure} alt="" />
+
+                <div className="py-6 absolute top-0 left-0 px-4 flex flex-col">
+                  <span className="text-[8px] text-gray-300  font-thin ">
+                    “Partnering with T²C was a game-changer. Their accelerators,
+                    like TurboStream, optimized our video streaming
+                    capabilities, helping us deliver a flawless user experience.
+                    They didn’t just meet our expectations - they redefined
+                    what’s possible in tech collaboration”
+                  </span>
+
+                  <div className="flex flex-row items-center gap-2 pt-4">
+                    <div className="bg-black h-10 w-10 rounded-full"></div>
+
+                    <div className=" flex flex-col">
+                      <span className="text-gray-300 text-sm">
+                        JayKanth Raj
+                      </span>
+                      <span className="text-gray-500 text-xs">
+                        Stealth Mode Startup
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div>
-            <div className="relative w-60  ">
-              <img className="object-cover " src={Figure} alt="" />
+        <div className="flex flex-row">
+          <div className="bg-gray-900">
+            <div className="flex flex-row ">
+              <span className="text-gray-200 pr-3">
+                Ready to Build the Future? Let's Make It Happen
+              </span>
 
-              <div className="py-6 absolute top-0 left-0 px-4 flex flex-col">
-                <span className="text-[8px] text-gray-300  font-thin ">
-                  “We were struggling with onboarding inefficiencies until T²C
-                  stepped in. Their AI-driven solutions and seamless integration
-                  of TurboAuth transformed our workflows, cutting onboarding
-                  time by 50%. It’s like having a powerhouse tech team on
-                  demand.”
-                </span>
+              <div className="border-l-1 border-gray-400  "></div>
+              <span className="pl-3 text-[9px] text-gray-400 flex items-center">
+                Your breakthrough idea deserves a world-class execution. Partner
+                with T²C and transform your vision into reality.
+              </span>
+            </div>
 
-                <div className="flex flex-row items-center gap-2 pt-4">
-                  <div className="bg-black h-10 w-10 rounded-full"></div>
-
-                  <div className=" flex flex-col">
-                    <span className="text-gray-300 text-sm">Raktim Bharatee</span>
-                    <span className="text-gray-500 text-xs">Pichain</span>
-                  </div>
-                </div>
+            <div  className="flex ">
+              <div className="  flex  flex-col text-gray-300 text-[9px] font-thin">
+                <span>First Name</span>
+                <input
+                  className="py-1 px-2 border border-gray-300 rounded-md placeholder:text-gray-300"
+                  type="text"
+                  placeholder="First Name"
+                />
               </div>
+              <div className="  flex  flex-col text-gray-300 text-[9px] font-thin">
+                <span>Last Name</span>
+                <input
+                  className="py-1 px-2 border border-gray-300 rounded-md placeholder:text-gray-300"
+                  type="text"
+                  placeholder="Last Name"
+                />
+              </div>
+            </div>
+
+            <div className="flex ">
+              <div  className="  flex  flex-col text-gray-300 text-[9px] font-thin">
+                <span>Email ID </span>
+                <input
+                 className="py-1 px-2 border border-gray-300 rounded-md placeholder:text-gray-300"
+                type="text" placeholder="Email ID" />
+              </div>
+              <div  className="  flex  flex-col text-gray-300 text-[9px] font-thin">
+                <span>Phone Number</span>
+                <input
+                 className="py-1 px-2 border border-gray-300 rounded-md placeholder:text-gray-300"
+                type="text" placeholder="+1-202-555-0174" />
+              </div>
+            </div>
+
+            <div className="bg-[#2029C8] text-gray-200 w-60 flex justify-center text-[9px] font-thin py-1 rounded-sm">
+              <button>Send Now</button>
             </div>
           </div>
 
-          <div>
-            <div className="relative w-60  ">
-              <img className="object-cover " src={Figure} alt="" />
-
-              <div className="py-6 absolute top-0 left-0 px-4 flex flex-col">
-                <span className="text-[8px] text-gray-300  font-thin ">
-                  “Partnering with T²C was a game-changer. Their accelerators,
-                  like TurboStream, optimized our video streaming capabilities,
-                  helping us deliver a flawless user experience. They didn’t
-                  just meet our expectations - they redefined what’s possible in
-                  tech collaboration”
+          <div className="flex flex-col gap-4">
+            <div className=" h-fit w-68 py-4 rounded-xl bg-gray-950 text-gray-200 flex flex-row">
+              <div className="">
+                <IoLocationOutline size={36} color="blue" />
+              </div>
+              <div className="flex flex-col pr-3 ">
+                <span>Location</span>
+                <span className="text-[11px] font-thin pt-2">
+                  Turbostart Technology Development Centre Pvt Ltd CIN:
+                  U72900TZ2022PTC029746 Address: 1st Floor, Mayflower
+                  Valencia,Avinashi Road, Coimbatore - 641004, TN, IN
                 </span>
+              </div>
+            </div>
 
-                <div className="flex flex-row items-center gap-2 pt-4">
-                  <div className="bg-black h-10 w-10 rounded-full"></div>
+            <div className=" h-fit w-68 py-4 rounded-xl bg-gray-950 text-gray-200 flex flex-row">
+              <RiHeadphoneLine size={36} color="blue" />
 
-                  <div className=" flex flex-col">
-                    <span className="text-gray-300 text-sm">JayKanth Raj</span>
-                    <span className="text-gray-500 text-xs">Stealth Mode Startup</span>
-                  </div>
-                </div>
+              <div className="flex flex-col pr-3 ">
+                <span>Contact Number</span>
+                <span className="text-[11px] font-thin pt-2">
+                  +91 7598 443 162
+                </span>
+              </div>
+            </div>
+
+            <div className=" h-fit w-68 py-4 rounded-xl bg-gray-950 text-gray-200 flex flex-row">
+              <LuMail size={36} color="blue" />
+              <div>
+                <span>Email Address</span>
+                <span>t2c@tsquaredc.com</span>
               </div>
             </div>
           </div>
-          </div>
-
-
         </div>
       </div>
     </>
