@@ -40,7 +40,7 @@ const Hero = () => {
         <div className="">
           <img
             className="object-contain, w-full"
-            src={imageUrl}
+            src="./public/t2c/Background.jpg"
             style={{}}
             alt=""
           />
