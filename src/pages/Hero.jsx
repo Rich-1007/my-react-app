@@ -3,6 +3,9 @@ import React from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { HiOutlineFolderOpen } from "react-icons/hi2";
 
+const imageUrTesting = "/src/assets/Background.jpg";
+
+
 const imageUrl = "./public/t2c/Background.jpg";
 const startBig = "./public/t2c/Start-Big.png";
 const Hero_pics1 = "./public/t2c/Hero-pics/Group 1686550978.png";
@@ -40,7 +43,7 @@ const Hero = () => {
         <div className="">
           <img
             className="object-contain, w-full"
-            src="./public/t2c/Background.jpg"
+            src={imageUrTesting}
             style={{}}
             alt=""
           />
