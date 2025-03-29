@@ -6,43 +6,39 @@ import { HiOutlineFolderOpen } from "react-icons/hi2";
 import { IoLocationOutline } from "react-icons/io5";
 import { RiHeadphoneLine } from "react-icons/ri";
 import { LuMail } from "react-icons/lu";
+import { BsLinkedin } from "react-icons/bs";
+import { VscTwitter } from "react-icons/vsc";
+import { FaDiscord } from "react-icons/fa";
 
 import imageUrTesting from "../assets/Background.jpg";
 
+import startBig from "/t2c/Start-Big.png";
+import Hero_pics1 from "/t2c/Hero-pics/Group 1686550978.png";
+import Hero_pics2 from "/t2c/Hero-pics/Frame 1686551014.png";
+import Hero_pics3 from "/t2c/Hero-pics/Group 1686551003.png";
+import Hero_pics4 from "/t2c/Hero-pics/Group 1686551002.png";
+import Hero_logo1 from "/t2c/Hero-pics/Logo/logo-dark.png";
+import Hero_logo2 from "/t2c/Hero-pics/Logo/Mask group.png";
+import Hero_logo3 from "/t2c/Hero-pics/Logo/optimile.png";
+import Hero_logo4 from "/t2c/Hero-pics/Logo/ts-bridge-logo.png";
 
+import Ken1 from "/t2c/Action-pic/ken42 1 (1).png";
+import Ken2 from "/t2c/Action-pic/ken42 1.png";
+import Closed1 from "/t2c/Closed1.png";
+import Closed2 from "/t2c/Background.png";
+import Closed3 from "/t2c/Closed2.png";
+import Closed4 from "/t2c/Closed.png";
+import About_TSquaredC from "/About_TSquaredC-pic.png";
 
+import wc1 from "/t2c/why choose/wc1.png";
+import wc2 from "/t2c/why choose/wc2.png";
+import wc3 from "/t2c/why choose/wc3.png";
+import wc4 from "/t2c/why choose/wc4.png";
+import Frame_1 from "/t2c/Frame 1686551003.png";
+import Frame_2 from "/t2c/Frame_2.png";
+import Figure from "/t2c/Figure.png";
 
-// const imageUrTesting = "/src/assets/Background.jpg";
-
-const imageUrl = "./public/t2c/Background.jpg";
-const startBig = "./public/t2c/Start-Big.png";
-const Hero_pics1 = "./public/t2c/Hero-pics/Group 1686550978.png";
-const Hero_pics2 = "./public/t2c/Hero-pics/Frame 1686551014.png";
-const Hero_pics3 = "./public/t2c/Hero-pics/Group 1686551003.png";
-const Hero_pics4 = "./public/t2c/Hero-pics/Group 1686551002.png";
-const Hero_logo1 = "./public/t2c/Hero-pics/Logo/logo-dark.png";
-const Hero_logo2 = "./public/t2c/Hero-pics/Logo/Mask group.png";
-const Hero_logo3 = "./public/t2c/Hero-pics/Logo/optimile.png";
-const Hero_logo4 = "./public/t2c/Hero-pics/Logo/ts-bridge-logo.png";
-const Ken1 = "./public/t2c/Action-pic/ken42 1 (1).png";
-const Ken2 = "./public/t2c/Action-pic/ken42 1.png";
-
-const Closed1 = "./public/t2c/Closed1.png";
-const Closed2 = "./public/t2c/Background.png";
-const Closed3 = "./public/t2c/Closed2.png";
-const Closed4 = "./public/t2c/Closed.png";
-
-const About_TSquaredC = "./public/About_TSquaredC-pic.png";
-
-const wc1 = "./public/t2c/why choose/wc1.png";
-const wc2 = "./public/t2c/why choose/wc2.png";
-const wc3 = "./public/t2c/why choose/wc3.png";
-const wc4 = "./public/t2c/why choose/wc4.png";
-
-const Frame_1 = "./public/t2c/Frame 1686551003.png";
-const Frame_2 = "./public/t2c/Frame_2.png";
-
-const Figure = "./public/t2c/Figure.png";
+import Footer1 from "/t2c/footer-bg.jpg";
 
 const Hero = () => {
   return (
@@ -290,8 +286,8 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="outline-4 flex px-8 py-12">
-          <div className="outline-4 w-1/2">
+        <div className="outline-4 flex px-8 py-12 flex-col sm:flex-row bg-gray-700">
+          <div className=" sm:w-1/2">
             <span
               className="text-2xl font-bold"
               style={{
@@ -302,7 +298,7 @@ const Hero = () => {
             >
               About TSquaredC
             </span>
-            <div className="flex flex-col gap-4 text-xs font-thin text-blue-200">
+            <div className="py-5 sm:px-0 flex flex-col gap-4 text-xs font-thin text-blue-200">
               <span>
                 At T2C, we push the boundaries of technology for businesses
                 worldwide by creating solutions that are both innovative and
@@ -410,31 +406,31 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="bg-green-300  py-10">
-          <div className="flex flex-col">
+        <div className="bg-green-300  py-10 px-5">
+          <div className="flex flex-col  sm:px-0 ">
             <span
-              className="text-2xl font-bold"
+              className="text-2xl font-bold text-center sm:text-start"
               style={{
                 background: "linear-gradient(to right, #909DC1, #3663DE)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
               }}
             >
-              Choose Your SolutionFor Emerging Businesses
+              Choose Your Solution For Emerging Businesses
             </span>
-            <span className="flex flex-col text-blue-100 text-sm font-thin">
+            <span className="sm:pt-0 pt-4 flex flex-col text-blue-100 text-sm font-thin  text-center sm:text-start">
               Propel your new age business forward with our Solutions:
             </span>
           </div>
 
-          <div className="flex flex-row gap-3">
-            <div className="w-1/3 bg-red-200 rounded-2xl">
-              <img src={Frame_1} alt="" />
+          <div className="flex flex-row gap-3 ">
+            <div className="sm:w-1/3 bg-gray-600 rounded-2xl sm:pt-0 pt-7">
+              <img src={Frame_1} alt="" className="object-cover " />
 
               <div className="flex flex-col h-44">
                 <div>
                   <span
-                    className="text-2xl font-bold px-5"
+                    className="text-2xl  font-bold px-5"
                     style={{
                       background: "linear-gradient(to right, #909DC1, #3663DE)",
                       WebkitBackgroundClip: "text",
@@ -445,14 +441,14 @@ const Hero = () => {
                   </span>
                 </div>
 
-                <div className="flex flex-row  px-5 ">
-                  <span className="pr-10  flex flex-col gap-4 text-xs font-thin text-blue-200">
+                <div className="flex sm:flex-row flex-col  px-5 sm:py-0">
+                  <span className="pr-10  py-3  flex flex-col gap-4 text-xs font-thin text-blue-200">
                     Instant Integration, Immediate Impact: Dive into the market
                     without delay, utilizing our fully integrated tech stack
                     that meshes seamlessly with your operations.
                   </span>
 
-                  <div className="  border-gray-600 border-l-2 pl-10 "></div>
+                  <div className="  border-gray-600 border-l-2 pl-10 hidden sm:block"></div>
 
                   <div className=" flex items-center  text-xs text-nowrap bg-[#2029C8] rounded-3xl py-1 px-5 text-gray-200 font-thin w-fit h-10">
                     <button>Customize Your Path</button>
@@ -461,7 +457,7 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className="w-3/5 bg-red-200 rounded-2xl">
+            <div className="w-3/5 bg-red-00 rounded-2xl hidden sm:block ">
               <img src={Frame_2} alt="" />
 
               <div className="flex flex-row px-5 ">
@@ -607,22 +603,33 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex flex-row">
-          <div className="bg-gray-900">
-            <div className="flex flex-row ">
-              <span className="text-gray-200 pr-3">
+
+
+
+
+
+
+
+
+
+
+
+        <div className="flex flex-col sm:flex-row sm:px-14">
+          <div className="bg-gray-950 sm:py-0 py-8 px-6 sm:px-0 ">
+            <div className="flex sm:flex-row flex-col    sm:px-6 sm:pt-6">
+              <span className="text-gray-200 pr-3 ">
                 Ready to Build the Future? Let's Make It Happen
               </span>
 
-              <div className="border-l-1 border-gray-400  "></div>
-              <span className="pl-3 text-[9px] text-gray-400 flex items-center">
+              <div className="border-l-1 border-gray-600   "></div>
+              <span className="pt-3 sm:pt-0 sm:pl-3 text-[9px] text-gray-400 flex items-center">
                 Your breakthrough idea deserves a world-class execution. Partner
                 with T²C and transform your vision into reality.
               </span>
             </div>
 
-            <div  className="flex ">
-              <div className="  flex  flex-col text-gray-300 text-[9px] font-thin">
+            <div className="flex flex-col sm:flex-row gap-4 pt-6 bg-green-600">
+              <div className="  flex  flex-col text-gray-300 sm:text-[9px] text-sm  font-thin">
                 <span>First Name</span>
                 <input
                   className="py-1 px-2 border border-gray-300 rounded-md placeholder:text-gray-300"
@@ -630,7 +637,7 @@ const Hero = () => {
                   placeholder="First Name"
                 />
               </div>
-              <div className="  flex  flex-col text-gray-300 text-[9px] font-thin">
+              <div className="pb-4 sm:pb-0  flex  flex-col text-gray-300 sm:text-[9px] text-sm  font-thin">
                 <span>Last Name</span>
                 <input
                   className="py-1 px-2 border border-gray-300 rounded-md placeholder:text-gray-300"
@@ -640,58 +647,238 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className="flex ">
-              <div  className="  flex  flex-col text-gray-300 text-[9px] font-thin">
+            <div className="flex  flex-col sm:flex-row  gap-4 pb-6">
+              <div className="  flex  flex-col text-gray-300 sm:text-[9px] text-sm font-thin">
                 <span>Email ID </span>
                 <input
-                 className="py-1 px-2 border border-gray-300 rounded-md placeholder:text-gray-300"
-                type="text" placeholder="Email ID" />
+                  className="py-1 px-2 border border-gray-300 rounded-md placeholder:text-gray-300"
+                  type="text"
+                  placeholder="Email ID"
+                />
               </div>
-              <div  className="  flex  flex-col text-gray-300 text-[9px] font-thin">
+              <div className="  flex  flex-col text-gray-300  sm:text-[9px] text-sm font-thin">
                 <span>Phone Number</span>
                 <input
-                 className="py-1 px-2 border border-gray-300 rounded-md placeholder:text-gray-300"
-                type="text" placeholder="+1-202-555-0174" />
+                  className="py-1 px-2 border border-gray-300 rounded-md placeholder:text-gray-300"
+                  type="text"
+                  placeholder="+1-202-555-0174"
+                />
               </div>
             </div>
 
-            <div className="bg-[#2029C8] text-gray-200 w-60 flex justify-center text-[9px] font-thin py-1 rounded-sm">
-              <button>Send Now</button>
+            <div className=" bg-[#2029C8] text-gray-200 w-full sm:w-60 flex justify-center sm:text-[9px] text-sm  font-thin sm:py-1 py-3 rounded-sm">
+              <button className="">Send Now</button>
             </div>
           </div>
 
-          <div className="flex flex-col gap-4">
-            <div className=" h-fit w-68 py-4 rounded-xl bg-gray-950 text-gray-200 flex flex-row">
+          <div className="flex flex-col gap-4  py-12 px-6 items-center">
+            <div className=" h-24 sm:h-fit w-full sm:w-68 py-4 rounded-xl bg-gray-950 text-gray-200 flex flex-row">
               <div className="">
                 <IoLocationOutline size={36} color="blue" />
               </div>
               <div className="flex flex-col pr-3 ">
                 <span>Location</span>
-                <span className="text-[11px] font-thin pt-2">
+                <span className="text-[11px] text-xs hidden font-thin pt-2">
                   Turbostart Technology Development Centre Pvt Ltd CIN:
                   U72900TZ2022PTC029746 Address: 1st Floor, Mayflower
                   Valencia,Avinashi Road, Coimbatore - 641004, TN, IN
                 </span>
-              </div>
-            </div>
-
-            <div className=" h-fit w-68 py-4 rounded-xl bg-gray-950 text-gray-200 flex flex-row">
-              <RiHeadphoneLine size={36} color="blue" />
-
-              <div className="flex flex-col pr-3 ">
-                <span>Contact Number</span>
-                <span className="text-[11px] font-thin pt-2">
-                  +91 7598 443 162
+                <span className="sm:hidden text-xs font-thin text-gray-400">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                  adipisicing elit. Neque adipisicing elit.
                 </span>
               </div>
             </div>
 
-            <div className=" h-fit w-68 py-4 rounded-xl bg-gray-950 text-gray-200 flex flex-row">
+            <div className=" h-24 w-full  sm:w-68 py-4 rounded-xl bg-gray-950 text-gray-200 flex flex-row">
+              <RiHeadphoneLine size={36} color="blue" />
+
+              <div className="flex flex-col pr-3 ">
+                <span>Contact Number</span>
+
+                <div className="flex flex-col text-xs font-thin text-gray-400">
+                  <span>+91 7598 443 162</span>
+                  <span className="sm:hidden">+91 7598 443 162</span>
+                </div>
+              </div>
+            </div>
+
+            <div className=" h-24 w-full sm:w-68 py-4 rounded-xl bg-gray-950 text-gray-200 flex flex-row">
               <LuMail size={36} color="blue" />
               <div>
                 <span>Email Address</span>
-                <span>t2c@tsquaredc.com</span>
+                <div className="flex flex-col text-xs font-thin text-gray-400">
+                  <span>t2c@tsquaredc.com</span>
+                  <span className="sm:hidden">t2c@tsquaredc.com</span>
+                </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div className="bg-red-400 relative sm:h-92 h-screen overflow-hidden ">
+          <img
+            src={Footer1}
+            alt=""
+            className="object-cover h-screen sm:h-fit w-full "
+          />
+
+          <div className="absolute top-0    py-10 sm:px-10 w-full ">
+            <div className="hidden sm:flex flex-row pb-10  ">
+              <div className="w-1/2 flex flex-col">
+                <div className=" w-20 ">
+                  <img src={startBig} alt="" className="object-cover" />
+                </div>
+
+                <div className="pl-2">
+                  <div className="flex flex-col text-xs font-thin text-gray-200">
+                    <span>Want to build the future with us?</span>
+                    <span>follow T²C and make an impact!</span>
+                  </div>
+                  <div className="flex flex-row gap-4 pt-5">
+                    <BsLinkedin size={18} color="gray" />
+                    <VscTwitter size={18} color="gray" />
+                    <FaDiscord size={18} color="gray" />
+                  </div>
+                </div>
+              </div>
+              <div className="w-1/2 flex flex-row gap-20 justify-center">
+                <div className="flex flex-col gap-2">
+                  <span className="cursor-pointer text-md text-gray-100 font-thin">
+                    Product
+                  </span>
+                  <span className="cursor-pointer text-xs font-thin text-gray-200">
+                    Home
+                  </span>
+                  <span className="cursor-pointer text-xs font-thin text-gray-200">
+                    About
+                  </span>
+                  <span className="cursor-pointer text-xs font-thin text-gray-200">
+                    Services
+                  </span>
+                  <span className="cursor-pointer text-xs font-thin text-gray-200">
+                    Faq
+                  </span>
+                  <span className="cursor-pointer text-xs font-thin text-gray-200">
+                    why Choose
+                  </span>
+                  <span className="cursor-pointer text-xs font-thin text-gray-200">
+                    Contact
+                  </span>
+                </div>
+                <div className="flex flex-col gap-2">
+                  <span className="cursor-pointer text-md text-gray-100 font-thin">
+                    Company
+                  </span>
+                  <span className="cursor-pointer text-xs font-thin text-gray-200">
+                    Vision
+                  </span>
+                  <span className="cursor-pointer text-xs font-thin text-gray-200">
+                    Mission
+                  </span>
+                  <span className="cursor-pointer text-xs font-thin text-gray-200">
+                    Values
+                  </span>
+                  <span className="cursor-pointer text-xs font-thin text-gray-200">
+                    Team
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col pb-10  sm:hidden  ">
+              <div className=" flex flex-row gap-20 px-5 ">
+                <div className="flex flex-col gap-2">
+                  <span className="cursor-pointer text-md text-gray-100 font-thin">
+                    Product
+                  </span>
+                  <span className="cursor-pointer text-xs font-thin text-gray-200">
+                    Home
+                  </span>
+                  <span className="cursor-pointer text-xs font-thin text-gray-200">
+                    About
+                  </span>
+                  <span className="cursor-pointer text-xs font-thin text-gray-200">
+                    Services
+                  </span>
+                  <span className="cursor-pointer text-xs font-thin text-gray-200">
+                    Faq
+                  </span>
+                  <span className="cursor-pointer text-xs font-thin text-gray-200">
+                    why Choose
+                  </span>
+                  <span className="cursor-pointer text-xs font-thin text-gray-200">
+                    Contact
+                  </span>
+                </div>
+                <div className="flex flex-col gap-2">
+                  <span className="cursor-pointer text-md text-gray-100 font-thin">
+                    Company
+                  </span>
+                  <span className="cursor-pointer text-xs font-thin text-gray-200">
+                    Vision
+                  </span>
+                  <span className="cursor-pointer text-xs font-thin text-gray-200">
+                    Mission
+                  </span>
+                  <span className="cursor-pointer text-xs font-thin text-gray-200">
+                    Values
+                  </span>
+                  <span className="cursor-pointer text-xs font-thin text-gray-200">
+                    Team
+                  </span>
+                </div>
+              </div>
+
+              <div className="flex flex-col w-full px-3 pt-10">
+                <div className="w-30 ">
+                  <img src={startBig} alt="" className="object-cover" />
+                </div>
+
+                <div className="pl-2">
+                  <div className="flex flex-col text-xs font-thin text-gray-200">
+                    <span>TSquaredC Ltd.</span>
+                    <span>161, Basavanagar</span>
+                    <span>Bangalore, Karnataka</span>
+                  </div>
+                  <div className="flex flex-row gap-4 pt-5">
+                    <BsLinkedin size={22} color="gray" />
+                    <VscTwitter size={22} color="gray" />
+                    <FaDiscord size={22} color="gray" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="border-t border-gray-400 sm:mx-2"></div>
+            <div className="hidden sm:flex flex-row justify-between mx-2 text-xs font-thin text-gray-200 py-2">
+              <span>© 2024 TSquaredC | All Rights Reserved.</span>
+              <div className="flex gap-4">
+                <span className="cursor-pointer">Privacy Policy</span>
+                <span className="cursor-pointer">Terms of Service</span>
+              </div>
+            </div>
+            <div className="sm:hidden flex justify-between px-5 text-sm font-thin text-gray-200 py-2  flex-col gap-2">
+              <span className="cursor-pointer">Privacy Policy</span>
+              <span className="cursor-pointer">Terms of Service</span>
+              <span>© 2024 TSquaredC | All Rights Reserved.</span>
             </div>
           </div>
         </div>
