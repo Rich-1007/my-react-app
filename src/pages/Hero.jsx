@@ -7,7 +7,12 @@ import { IoLocationOutline } from "react-icons/io5";
 import { RiHeadphoneLine } from "react-icons/ri";
 import { LuMail } from "react-icons/lu";
 
-const imageUrTesting = "/src/assets/Background.jpg";
+import imageUrTesting from "../assets/Background.jpg";
+
+
+
+
+// const imageUrTesting = "/src/assets/Background.jpg";
 
 const imageUrl = "./public/t2c/Background.jpg";
 const startBig = "./public/t2c/Start-Big.png";
