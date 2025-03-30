@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { HiOutlineFolderOpen } from "react-icons/hi2";
@@ -39,8 +39,12 @@ import Frame_2 from "/t2c/Frame_2.png";
 import Figure from "/t2c/Figure.png";
 
 import Footer1 from "/t2c/footer-bg.jpg";
+import Hamburger from "./hamburger";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Hero = () => {
+  const [isShow, setIsShow] = useState(false);
+
   return (
     <>
       <div style={{}} className="relative flex justify-center">
@@ -53,12 +57,25 @@ const Hero = () => {
           />
         </div>
 
+        <div className="absolute right-3 top-3 sm:hidden">
+          <div
+            className="bg-black p-1.5 "
+            onClick={() => setIsShow((prev) => !prev)}
+          >
+            <GiHamburgerMenu color="" className="text-gray-300" />
+          </div>
+
+         {isShow &&  <div className="absolute top-10 right-15  z-20">
+            <Hamburger />
+          </div> }
+        </div>
+
         <div className="absolute  top-8  w-full flex justify-around items-center">
           <div className="h-20">
             <img className="object-contain, h-full" src={startBig} alt="" />
           </div>
 
-          <div className="flex bg-gray-950 items-center h-8 rounded-4xl text-gray-300 text-[10px] px-9 py-1.5 gap-5 font-thin">
+          <div className="sm:flex hidden bg-gray-950 items-center h-8 rounded-4xl text-gray-300 text-[10px] px-9 py-1.5 gap-5 font-thin">
             <span className="">Home</span>
             <span>About</span>
             <span>Services</span>
@@ -183,7 +200,7 @@ const Hero = () => {
       </div>
 
       <div className="pt-32">
-        <div className="flex flex-col justify-between w-full items-center">
+        {/* <div className="flex flex-col justify-between w-full items-center">
           <span
             style={{
               background: "linear-gradient(to right, #909DC1, #3663DE)",
@@ -205,9 +222,9 @@ const Hero = () => {
               elit.”
             </span>
           </div>
-        </div>
+        </div> */}
 
-        <div className="flex flex-row justify-evenly">
+        {/* <div className="flex flex-row justify-evenly">
           <div className="bg-[#171717] w-44 rounded-xl ">
             <img src={Closed1} alt="" />
 
@@ -284,9 +301,9 @@ const Hero = () => {
               <MdOutlineArrowOutward size={9} className="text-blue-100" />
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="outline-4 flex px-8 py-12 flex-col sm:flex-row bg-gray-700">
+        {/* <div className="outline-4 flex px-8 py-12 flex-col sm:flex-row bg-gray-700">
           <div className=" sm:w-1/2">
             <span
               className="text-2xl font-bold"
@@ -317,12 +334,12 @@ const Hero = () => {
           <div>
             <img src={About_TSquaredC} alt="About_TSquaredC" />
           </div>
-        </div>
+        </div> */}
 
-        <div className="py-10 px-10 outline-orange-400 outline-4">
-          <div>
+        {/* <div className="py-10 sm:px-10 outline-orange-400 outline-4 bg-red-400 w-full">
+          <div className="bg-green-600 pb-7 w-full flex flex-col items-center text-center">
             <span
-              className="text-2xl font-bold"
+              className="text-2xl font-bold py-3 sm:p-0"
               style={{
                 background: "linear-gradient(to right, #909DC1, #3663DE)",
                 WebkitBackgroundClip: "text",
@@ -332,13 +349,16 @@ const Hero = () => {
               Why Choose TSquaredC{" "}
             </span>
             <span className="flex flex-col gap-4 text-xs font-thin text-blue-200">
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Phasellus nulla velit, maximus sit amet suscipit in, fermentum id
-              est. Suspendisse consequat ornare elit.”
+              est. Suspendisse consequat ornare elit.
             </span>
           </div>
-          <div className="flex flex-row">
-            <div className="bg-blue-600 flex flex-col  p-5   w-1/5 rounded-xl">
+
+
+
+          <div className="flex flex-row sm:px-0 px-7">
+            <div className="bg-blue-600 flex flex-col  p-5   sm:w-1/5 rounded-xl">
               <div className="flex flex-col gap-3 pb-3">
                 <div className="flex  items-center gap-2">
                   <HiOutlineFolderOpen className="text-gray-100 " size={18} />
@@ -354,7 +374,7 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className="bg-blue-600 flex flex-col  p-5   w-1/5 rounded-xl">
+            <div className="bg-blue-600 sm:flex flex-col  p-5 hidden  w-1/5 rounded-xl">
               <div className="flex flex-col gap-3 pb-3">
                 <div className="flex  items-center gap-2">
                   <HiOutlineFolderOpen className="text-gray-100 " size={18} />
@@ -370,7 +390,7 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className="bg-blue-600 flex flex-col  p-5   w-1/5 rounded-xl">
+            <div className="bg-blue-600 sm:flex hidden flex-col  p-5   w-1/5 rounded-xl">
               <div className="flex flex-col gap-3 pb-3">
                 <div className="flex  items-center gap-2">
                   <HiOutlineFolderOpen className="text-gray-100 " size={18} />
@@ -386,7 +406,7 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className="bg-blue-600 flex flex-col  p-5   w-1/5 rounded-xl">
+            <div className="bg-blue-600  sm:flex hidden  flex-col  p-5   w-1/5 rounded-xl">
               <div className="flex flex-col gap-3 pb-3">
                 <div className="flex  items-center gap-2">
                   <HiOutlineFolderOpen className="text-gray-100 " size={18} />
@@ -404,9 +424,9 @@ const Hero = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="bg-green-300  py-10 px-5">
+        {/* <div className="bg-green-300  py-10 px-5">
           <div className="flex flex-col  sm:px-0 ">
             <span
               className="text-2xl font-bold text-center sm:text-start"
@@ -505,9 +525,9 @@ const Hero = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div>
+        {/* <div>
           <span
             className="text-2xl font-bold "
             style={{
@@ -601,20 +621,9 @@ const Hero = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-
-
-
-
-
-
-
-
-
-
-
-        <div className="flex flex-col sm:flex-row sm:px-14">
+        {/* <div className="flex flex-col sm:flex-row sm:px-14">
           <div className="bg-gray-950 sm:py-0 py-8 px-6 sm:px-0 ">
             <div className="flex sm:flex-row flex-col    sm:px-6 sm:pt-6">
               <span className="text-gray-200 pr-3 ">
@@ -714,27 +723,9 @@ const Hero = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <div className="bg-red-400 relative sm:h-92 h-screen overflow-hidden ">
+        {/* <div className="bg-red-400 relative sm:h-92 h-screen overflow-hidden ">
           <img
             src={Footer1}
             alt=""
@@ -881,7 +872,7 @@ const Hero = () => {
               <span>© 2024 TSquaredC | All Rights Reserved.</span>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
