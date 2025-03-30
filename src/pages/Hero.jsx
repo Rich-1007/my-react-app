@@ -47,7 +47,7 @@ const Hero = () => {
 
   return (
     <>
-      <div style={{}} className="relative flex justify-center">
+      {/* <div style={{}} className="relative flex justify-center">
         <div className="">
           <img
             className="object-contain, w-full"
@@ -197,10 +197,10 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="pt-32">
-        <div className="flex flex-col justify-between w-full items-center">
+        {/* <div className="flex flex-col justify-between w-full items-center">
           <span
             style={{
               background: "linear-gradient(to right, #909DC1, #3663DE)",
@@ -222,9 +222,9 @@ const Hero = () => {
               elit.”
             </span>
           </div>
-        </div>
+        </div> */}
 
-        <div className="flex flex-row justify-evenly">
+        {/* <div className="flex flex-row justify-evenly">
           <div className="bg-[#171717] w-44 rounded-xl ">
             <img src={Closed1} alt="" />
 
@@ -301,9 +301,9 @@ const Hero = () => {
               <MdOutlineArrowOutward size={9} className="text-blue-100" />
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="outline-4 flex px-8 py-12 flex-col sm:flex-row bg-gray-700">
+        {/* <div className="outline-4 flex px-8 py-12 flex-col sm:flex-row bg-gray-700">
           <div className=" sm:w-1/2">
             <span
               className="text-2xl font-bold"
@@ -334,9 +334,9 @@ const Hero = () => {
           <div>
             <img src={About_TSquaredC} alt="About_TSquaredC" />
           </div>
-        </div>
+        </div> */}
 
-        <div className="py-10 sm:px-10 outline-orange-400 outline-4 bg-red-400 w-full">
+        {/* <div className="py-10 sm:px-10 outline-orange-400 outline-4 bg-red-400 w-full">
           <div className="bg-green-600 pb-7 w-full flex flex-col items-center text-center">
             <span
               className="text-2xl font-bold py-3 sm:p-0"
@@ -424,9 +424,9 @@ const Hero = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="bg-green-300  py-10 px-5">
+        {/* <div className="bg-green-300  py-10 px-5">
           <div className="flex flex-col  sm:px-0 ">
             <span
               className="text-2xl font-bold text-center sm:text-start"
@@ -525,9 +525,9 @@ const Hero = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div>
+        {/* <div>
           <span
             className="text-2xl font-bold "
             style={{
@@ -621,9 +621,9 @@ const Hero = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="flex flex-col sm:flex-row sm:px-14">
+        {/* <div className="flex flex-col sm:flex-row sm:px-14">
           <div className="bg-gray-950 sm:py-0 py-8 px-6 sm:px-0 ">
             <div className="flex sm:flex-row flex-col    sm:px-6 sm:pt-6">
               <span className="text-gray-200 pr-3 ">
@@ -723,7 +723,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="bg-red-400 relative sm:h-92 h-screen overflow-hidden ">
           <img

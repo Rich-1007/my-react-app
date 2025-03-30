@@ -1,12 +1,16 @@
 import React from "react";
+import "./style.css";
+
 import { IoLocationOutline } from "react-icons/io5";
 import { PiHeadphones } from "react-icons/pi";
 import { MdOutlineMail } from "react-icons/md";
-import "./Testing.css";
 
-const App = () => {
+const FormSection = () => {
   return (
-    <div className="body">
+    <div 
+    className="body "
+    
+    >
       <div className="formBody">
         <div className="formBody-section">
           <div className="section-header">
@@ -15,7 +19,7 @@ const App = () => {
           </div>
           <div className="boundery"></div>
 
-          <div className="description" >
+          <div className="description">
             <p className="custom-p">
               Your breakthrough idea deserves a world-class execution. Partner
               with T²C and transform your vision into reality.
@@ -58,7 +62,7 @@ const App = () => {
           </div>
         </div>
         <div className="button-container">
-          <button>Send Now</button>
+          <button className="pointer-class">Send Now</button>
         </div>
       </div>
 
@@ -99,4 +103,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default FormSection;
