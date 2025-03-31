@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./App.css";
-import Hero from "./pages/Hero";
 import Testing from "./Testing";
 import FormSection from "./pages/FormSection";
 import Footer from "./pages/Footer";
@@ -10,7 +9,21 @@ import Products from "./pages/Products";
 function App() {
   return (
     <>
-      abcd
+      {/* <Hero /> */}
+
+      {/* <Testimonials /> */}
+
+      {/* <Testing /> */}
+
+
+
+      <div className="aboutSection">
+        {/* <Products /> */}
+      </div>
+      <div className="footerSection ">
+        {/* <FormSection /> */}
+        <Footer />
+      </div>
     </>
   );
 }
