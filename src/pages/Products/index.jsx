@@ -4,7 +4,6 @@ import card2 from "/t2c/card-2.png";
 import card3 from "/t2c/card-3.png";
 import card4 from "/t2c/card-4.png";
 
-
 import { IoIosArrowRoundForward } from "react-icons/io";
 const Products = () => {
   return (
@@ -19,7 +18,9 @@ const Products = () => {
       </div>
 
       <div className="main-content">
-        <div className="cards-container">
+
+        
+        <div className="cards-container scroll-container">
           {/*card */}
           <div className="card">
             <div className="banner-img">
@@ -106,7 +107,6 @@ const Products = () => {
           </div>
         </div>
       </div>
-
       
     </section>
   );

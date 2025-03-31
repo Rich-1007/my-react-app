@@ -12,9 +12,11 @@ function App() {
   return (
     <>
       <HeroSection />
+
       <div className="aboutSection">
-        <Products />
+        <Products  />
       </div>
+
       <div className="aboutSection">
         <About />
         <WhyChoose />
