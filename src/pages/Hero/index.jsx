@@ -41,26 +41,22 @@ const HeroSection = () => {
             className="hamburger-icon"
             onClick={() => setIsTrue((prev) => !prev)}
           >
-            <GiHamburgerMenu width={40} height={40} color="white" />
+            <GiHamburgerMenu size={25} color="white" />
           </div>
           <button className="get-started-btn">Get Started</button>
         </div>
 
         <div className="hero-section">
           <div className="content">
-            <div className="main-content"
-            style={{position:"relative"}}
-            >
+            <div className="main-content" style={{ position: "relative" }}>
+              
+            {isTrue && <div className="overlay"></div>}
               {isTrue && (
-                <div
-
-                className="HamModal"
-                  // style={{
-                    
-                  // }}
-                >
-                  <ul className="navbar">
-                    <li className="">Home</li>
+                <div class="HamModal">
+                  <ul
+                    className="navbar"
+                  >
+                    <li className="text-gray-300">Home</li>
                     <li className="">About</li>
                     <li className="">Service</li>
                     <li className="">Blogs</li>
