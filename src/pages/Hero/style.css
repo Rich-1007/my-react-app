@@ -196,12 +196,23 @@
     display: none;
   }
   
+  .HamModal {
+    background-color: black;
+    color: gray;
+    padding-block: 1rem;
+    padding-inline: 3rem;
+    border-radius: 20px;
+    position: absolute;
+    top: 0px;
+}
+
   /* Small devices: 480px and up */
   @media only screen and (min-width: 480px) {
   }
   
   /* Medium devices: 768px and up */
   @media only screen and (min-width: 768px) {
+    .HamModal {display: none;}
     .main-container .header .hamburger-icon {
       display: none;
     }
