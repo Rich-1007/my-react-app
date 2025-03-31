@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
-
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .gradient-text {
   background: linear-gradient(90deg, #ffffff 0%, #82aaff 100%);
