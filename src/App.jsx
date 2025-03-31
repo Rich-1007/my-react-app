@@ -3,25 +3,22 @@ import "./App.css";
 import Testing from "./Testing";
 import FormSection from "./pages/FormSection";
 import Footer from "./pages/Footer";
-import Testimonials from "./pages/Testimonials";
 import Products from "./pages/Products";
+import Testimonials from "./pages/Testimonials/Testimonials";
 
 function App() {
   return (
     <>
       {/* <Hero /> */}
 
-      {/* <Testimonials /> */}
-
       {/* <Testing /> */}
 
-
-
       <div className="aboutSection">
-        {/* <Products /> */}
-      </div>
+        
+      <Testimonials />
+        {/* <Products /> */}</div>
       <div className="footerSection ">
-        {/* <FormSection /> */}
+        <FormSection />
         <Footer />
       </div>
     </>

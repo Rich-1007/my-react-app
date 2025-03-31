@@ -1,0 +1,109 @@
+.testimonials-container {
+    width: 87%;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 5rem;
+    width: 100% ;
+}
+
+.testimonials-container h1 {    
+    color: transparent;
+    background-image: linear-gradient(to right, #909DC1, #3663DE);
+    background-clip: text;
+    font-family: 'Figtree';
+    font-size: 3.331vw;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 11.103vw;
+    margin-bottom: 1.48vw;
+}
+
+.testimonials-container p {
+    text-align: center;
+    color: #909DC1;
+    font-family: 'Figtree';
+    font-weight: 300;
+    letter-spacing: 0.037vw;
+    font-size:1.036vw;
+    margin-bottom: 2.221vw
+}
+
+.testimonials-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.369vw;
+    width: 100%;
+}
+
+.testimonials-card {
+    border-radius: 1.11vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 1.11vw 2.221vw rgba(0, 0, 0, 0.2);
+    background-image: url('./t2c/Figure.png');
+    background-size: cover;
+    padding: 2.221vw;
+    
+}
+
+.testimonials-card p {
+    text-align: left;
+}
+
+.author-profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.184vw;
+}
+
+.author-image {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: rgb(58, 57, 57);
+   
+}
+
+.author-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-name {
+    margin-bottom: 0px !important;
+}
+
+.author-company {
+    margin-bottom: 0px !important;
+}
+
+
+@media screen and (max-width:767px){
+    .testimonials-container h1{
+        font-size: 7vw;
+    }
+    .testimonials-container p{
+        font-size: 3vw;
+    }
+    .testimonials-container {
+        width: auto;
+    }
+
+    .testimonials-card {
+        display: none;
+        padding: 4vw;
+    }
+
+    .testimonials-cards{
+        grid-template-columns: 100%;
+    }
+
+    .testimonial-card-0{
+        display: block;
+    }
+
+}
