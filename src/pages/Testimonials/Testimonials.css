@@ -45,7 +45,7 @@
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0 1.11vw 2.221vw rgba(0, 0, 0, 0.2);
-    background-image: url('./public/t2c/Figure.png');
+    background-image: url('../../../public/t2c/Figure.png');
     
     background-size: cover;
     padding: 2.221vw;
