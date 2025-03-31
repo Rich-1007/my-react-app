@@ -1,11 +1,12 @@
 .why-choose{
-    width: 87%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     gap: 2.221vw;
     align-items: center;
     justify-self: center;
     margin-top: -22.206vw;
+    padding-bottom: .7rem;
 }
 
 .why-choose h1{
@@ -30,7 +31,7 @@
 }
 
 .why-choose-cards{
-    width: 100%;
+    width: 105%;
     display: flex;
     justify-content: space-between;
     margin-top: 1.48vw;
@@ -43,10 +44,12 @@
 @media screen and (max-width:767px){
     .why-choose{
         margin-top: 10vw;
+        width: 96%;
+
     }
 
     .why-choose h1{
-        font-size: 7vw;
+        font-size: 6vw;
         }
 
     .why-choose p{

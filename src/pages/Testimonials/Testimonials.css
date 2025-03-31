@@ -1,6 +1,7 @@
 
 
 .testimonials-container {
+    
     width: 87%;
     justify-self: center;
     display: flex;
@@ -8,6 +9,8 @@
     align-items: center;
     padding-bottom: 5rem;
     width: 100% ;
+    
+
 }
 
 .testimonials-container h1 {    
@@ -18,7 +21,7 @@
     font-size: 3.331vw;
     font-weight: 600;
     text-align: center;
-    margin-top: 11.103vw;
+    margin-top: 3.103vw;
     margin-bottom: 1.48vw;
 }
 
@@ -95,19 +98,19 @@
     .testimonials-container {
         width: auto;
     }
-
+    
     .testimonials-card {
         
         display: none;
         padding: 4vw;
     }
-
+    
     .testimonials-cards{
         grid-template-columns: 100%;
     }
-
+    
     .testimonial-card-0{
         display: block;
     }
-
+    
 }
