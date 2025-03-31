@@ -10,21 +10,7 @@ import Products from "./pages/Products";
 function App() {
   return (
     <>
-      {/* <Hero /> */}
-
-      {/* <Testimonials /> */}
-
-      {/* <Testing /> */}
-
-
-
-      <div className="aboutSection">
-        {/* <Products /> */}
-      </div>
-      <div className="footerSection ">
-        {/* <FormSection /> */}
-        <Footer />
-      </div>
+      abcd
     </>
   );
 }
