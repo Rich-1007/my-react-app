@@ -258,6 +258,7 @@
     .features-section {
       position: relative;
     }
+    
   
     .features-section .box.flexRow {
       width: 100%;
@@ -334,6 +335,11 @@
   
     .innovation .cards-container #card-2 {
       display: flex;
+    }
+    .flexRow {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
     }
   }
   

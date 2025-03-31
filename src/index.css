@@ -2,6 +2,61 @@
 
 
 
+.gradient-text {
+  background: linear-gradient(90deg, #ffffff 0%, #82aaff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading-text-2 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  letter-spacing: 0;
+}
+.about-section {
+  display: flex;
+  flex-direction: column;np
+  gap: 5rem;
+  background-color: #010101;
+  padding-inline: 2rem;
+}
+
+@media only screen and (min-width: 480px) {
+}
+
+/* Medium devices: 768px and up */
+@media only screen and (min-width: 768px) {
+  .heading-text-2 {
+    font-size: 3.8rem;
+  }
+  .about-section{
+    padding-top: 5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .about-section {
+    padding-inline: 8.2rem;
+  }
+}
+
+
+
+
+
+
 
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
