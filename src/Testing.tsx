@@ -1,102 +1,46 @@
-import React from "react";
-import { IoLocationOutline } from "react-icons/io5";
-import { PiHeadphones } from "react-icons/pi";
-import { MdOutlineMail } from "react-icons/md";
-import "./Testing.css";
+import React, { useState, useEffect } from "react";
 
-const App = () => {
+const slides = ["Slide 1", "Slide 2", "Slide 3", "Slide 4", "Slide 5"];
+
+const SlidingCarousel = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === slides.length - 3 ? prevIndex : prevIndex + 1));
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? prevIndex : prevIndex - 1));
+  };
+
+  // useEffect(() => {
+  //   const slideInterval = setInterval(() => {
+  //     nextSlide();
+  //   }, 5000);
+  //   return () => clearInterval(slideInterval);
+  // }, [currentIndex]);
+
   return (
-    <div className="body">
-      <div className="formBody">
-        <div className="formBody-section">
-          <div className="section-header">
-            <span>Ready to Build the Future?</span>
-            <span>Let's Make It Happen</span>
-          </div>
-          <div className="boundery"></div>
-
-          <div className="description" >
-            <p className="custom-p">
-              Your breakthrough idea deserves a world-class execution. Partner
-              with T²C and transform your vision into reality.
-            </p>
-          </div>
-        </div>
-        <div className="form-section">
-          <div className="input-group">
-            <span>First Name</span>
-            <input
-              type="text"
-              placeholder="First Name"
-              className="input-field"
-            />
-          </div>
-
-          <div className="input-group ">
-            <span>Last Name</span>
-            <input
-              type="text"
-              placeholder="Last Name"
-              className="input-field"
-            />
-          </div>
-        </div>
-
-        <div className="form-section">
-          <div className="input-group ">
-            <span>Email Id</span>
-            <input type="text" placeholder="Email ID" className="input-field" />
-          </div>
-
-          <div className="input-group ">
-            <span>Phone Number</span>
-            <input
-              type="text"
-              placeholder="+1-202-555-0174"
-              className="input-field"
-            />
-          </div>
-        </div>
-        <div className="button-container">
-          <button>Send Now</button>
+    <div className="w-full flex flex-col items-center">
+      <div className="overflow-hidden w-[300px]">
+        <div
+          style={{ transform: `translateX(-${currentIndex * 60}px)` }}
+          className="flex transition-all duration-1000 gap-4"
+        >
+          {slides.map((slide, index) => (
+            <div key={index} className="w-32 h-20 bg-blue-500 text-white flex items-center justify-center rounded">
+              {slide}
+            </div>
+          ))}
         </div>
       </div>
 
-      <div className="detail-container">
-        <div className="location-div">
-          <div className="">
-            <IoLocationOutline size={40} color="blue" className="" />
-          </div>
-
-          <div className="info-title">
-            <p className="info-title">Location</p>
-            <p className="info-description">
-              <p>Turbostart Technology Development</p>
-              <p>Centre Pvt Ltd </p>
-              <p>CIN:U72900TZ2022PTC029746</p>
-              <p>Adderss : 1st Floor, Mayflower Valencia,</p>
-              <p>Avinashi Road, Coimbatore - 641004, TN, IN</p>
-            </p>
-          </div>
-        </div>
-
-        <div className="contact-div">
-          <PiHeadphones size={40} color="blue" />
-          <div>
-            <p className="contact-title">Contact Number</p>
-            <p className="contact-des">+91 7598 443 162</p>
-          </div>
-        </div>
-        <div className="Email-div">
-          <MdOutlineMail size={40} color="blue" />
-          <div className="flex flex-col">
-            <p className="Email-title">Email Address</p>
-            <p className="email-des">t2c@tsquaredc.com</p>
-          </div>
-        </div>
+      <div className="flex gap-4 mt-4">
+        <button onClick={prevSlide} className="px-4 py-2 bg-gray-700 text-white rounded" disabled={currentIndex === 0}>Prev</button>
+        <button onClick={nextSlide} className="px-4 py-2 bg-gray-700 text-white rounded" disabled={currentIndex >= slides.length - 3}>Next</button>
       </div>
     </div>
   );
 };
 
-export default App;
+export default SlidingCarousel;

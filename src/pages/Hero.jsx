@@ -527,7 +527,7 @@ const Hero = () => {
           </div>
         </div> */}
 
-        <div>
+        {/* <div>
           <span
             className="text-2xl font-bold "
             style={{
@@ -621,7 +621,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         
       </div>

@@ -1,0 +1,137 @@
+.products-section {
+  order: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8rem;
+  margin-top: 3rem;
+  /* overflow-x: hidden; */
+}
+
+.products-section .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8rem;
+  text-align: center;
+  max-width: 350px;
+}
+
+.products-section .heading-text-2 {
+  text-wrap: nowrap;
+  line-height: normal;
+  width: fit-content;
+  background: linear-gradient(90deg, #909dc1 0%, #3663de 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.8rem;
+}
+
+.products-section .desc {
+  font-size: 0.8rem;
+  color: #909dc1;
+}
+
+.products-section .main-content {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.products-section .main-content .cards-container {
+  display: flex;
+  gap: 36px;
+  width: 100%;
+  overflow-x: auto;
+  padding-inline: 0.5rem;
+}
+
+.cards-container .card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  color: #909dc1;
+  max-width: 220px;
+  max-height: 220px;
+  border: 1px solid #909dc140;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.card .text-content {
+  padding: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+}
+
+.card .card-title {
+  font-size: 1rem;
+  color: #fafafa;
+}
+
+.card .text-content p {
+  font-size: 0.6rem;
+}
+
+.card .card-btn {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.card-btn .btn-text {
+  font-size: 12px;
+}
+.card-btn .icon {
+  rotate: -45deg;
+}
+
+@media only screen and (min-width: 480px) {
+}
+
+/* Medium devices: 768px and up */
+@media only screen and (min-width: 768px) {
+  .products-section {
+    order: 1;
+    /* margin-top: 5rem; */
+    gap: 1.2rem;
+  }
+
+  .products-section .heading {
+    max-width: 740px;
+  }
+  .products-section .main-content .cards-container {
+    overflow-x: visible;
+    /* width: 100%; */
+  }
+  
+  .cards-container .card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    color: #909dc1;
+    max-width: 13rem;
+    min-height: 14rem;
+    border: 1px solid #909dc140;
+    border-radius: 12px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  
+  .card .text-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .card .card-title {
+    font-size: 1.2rem;
+    color: #fafafa;
+  }
+  .card .text-content p {
+    font-size: .6rem;
+  }
+}
