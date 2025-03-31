@@ -6,6 +6,8 @@ import Footer from "./pages/Footer";
 import Products from "./pages/Products";
 import Testimonials from "./pages/Testimonials/Testimonials";
 import Solution from "./pages/Solution/Solution";
+import WhyChoose from "./pages/WhyChoose/WhyChoose";
+import About from "./pages/About/About";
 
 function App() {
   return (
@@ -13,9 +15,12 @@ function App() {
       {/* <Hero /> */}
 
       {/* <Testing /> */}
+      <div className="aboutSection">
+        <About />
+        <WhyChoose />
+      </div>
 
       <div className="aboutSection">
-
         <Products />
       </div>
       <div className="aboutSection">
