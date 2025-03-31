@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Testimonials.css";
-
 const testimonialData = [
   {
     quote:
@@ -40,7 +39,10 @@ const Testimonials = () => {
       <h1>Testimonials</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-      <div className="testimonials-cards">
+      <div className="testimonials-cards"
+      >
+
+        
         {testimonialData.map((testimonial, index) => (
           <div className={`testimonials-card testimonial-card-${index}`}>
             <p>{testimonial.quote}</p>
