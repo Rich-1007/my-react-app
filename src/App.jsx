@@ -5,6 +5,7 @@ import FormSection from "./pages/FormSection";
 import Footer from "./pages/Footer";
 import Products from "./pages/Products";
 import Testimonials from "./pages/Testimonials/Testimonials";
+import Solution from "./pages/Solution/Solution";
 
 function App() {
   return (
@@ -14,9 +15,13 @@ function App() {
       {/* <Testing /> */}
 
       <div className="aboutSection">
-        
-      <Testimonials />
-        {/* <Products /> */}</div>
+
+        <Products />
+      </div>
+      <div className="aboutSection">
+        <Solution />
+        <Testimonials />
+      </div>
       <div className="footerSection ">
         <FormSection />
         <Footer />
